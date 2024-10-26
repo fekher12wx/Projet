@@ -1,0 +1,18 @@
+<table border="2">
+   <tr>
+        <td>app id</td>
+        <td>app id</td>
+        <td>app id</td>
+        <td>app id</td>
+        <td>app id</td>
+    </tr>
+    {% for e in booking %}
+    <tr>
+        <td>{{ e.BookingId }}</td>
+        <td>{{ e.startDate | date }}</td>
+        <td>{{ e.endDate | date }}</td>
+        <td>{{ e.status }}</td>
+        <td>{{ e.status }}</td>
+    </tr>
+{% endfor %}
+</table>
